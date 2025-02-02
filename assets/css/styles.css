@@ -185,3 +185,31 @@ section {
     aspect-ratio: 1 / 1;
 }
 /****************************** INGREDIENTS *******************************/
+
+/****************************** PRODUCTS *******************************/
+.products-list {
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.products-list .product {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products-list img {
+   aspect-ratio: 1/1;
+}
+
+:has(>.buy-button) {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.buy-button {
+    margin-right: 0;
+}
+/****************************** PRODUCTS *******************************/
