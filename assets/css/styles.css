@@ -1,3 +1,7 @@
+:root {
+    --flow: 1rem;
+}
+
 /****************************** RESET CSS *******************************/
 * {
     margin: 0;
@@ -38,7 +42,57 @@ a {
 
 button {
     border: none;
+    font: inherit;
     cursor: pointer;
     background: none;
 }
 /****************************** RESET CSS *******************************/
+
+
+/****************************** REUSABLE CSS *******************************/
+    /****************************** STRUCTURE *******************************/
+    .flow > * + * {
+        margin-top: var(--flow);
+    }
+
+    .flow-lg > * + * {
+        margin-top: calc(var(--flow) * 2);
+    }
+
+    .flow-sm > * + * {
+        margin-top: calc(var(--flow) / 2);
+    }
+    /****************************** STRUCTURE *******************************/
+
+
+    /****************************** TYPOGRAPHY *******************************/
+    .text-xl {
+        font-size: 3rem;
+    }
+
+    .text-lg {
+        font-size: 2rem;
+    }
+
+    .text-md {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .text-sm {
+        font-size: 0.875rem;
+    }
+
+    .text-xs {
+        font-size: 0.75rem;
+    }
+
+    .text-center {
+        text-align: center;
+        margin-inline: auto;
+    }
+    /****************************** TYPOGRAPHY *******************************/
+/****************************** REUSABLE CSS *******************************/
