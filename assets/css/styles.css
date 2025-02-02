@@ -1,0 +1,39 @@
+/****************************** RESET CSS *******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100svh;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+p, span, li {
+    max-width: 65ch;
+    text-wrap: pretty;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+/****************************** RESET CSS *******************************/
