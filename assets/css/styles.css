@@ -139,8 +139,19 @@ section {
 
 /****************************** HERO *******************************/
 .hero-section {
+    gap: 5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 /****************************** HERO *******************************/
+
+
+/****************************** ABOUT *******************************/
+.about-section {
+    gap: 5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+/****************************** ABOUT *******************************/
