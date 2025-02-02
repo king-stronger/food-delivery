@@ -155,3 +155,13 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 /****************************** ABOUT *******************************/
+
+
+/****************************** POPULAR *******************************/
+.popular-list {
+    display: grid;
+    column-gap: 5rem;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+/****************************** POPULAR *******************************/
