@@ -53,14 +53,17 @@ button {
 /****************************** REUSABLE CSS *******************************/
     /****************************** STRUCTURE *******************************/
     .flow > * + * {
+        display: block;
         margin-top: var(--flow);
     }
 
     .flow-lg > * + * {
+        display: block;
         margin-top: calc(var(--flow) * 2);
     }
 
     .flow-sm > * + * {
+        display: block;
         margin-top: calc(var(--flow) / 2);
     }
     /****************************** STRUCTURE *******************************/
@@ -102,6 +105,10 @@ button {
         padding: .5rem 1rem;
         border-radius: 1rem;
         background: orange;
+    }
+
+    .bx {
+        font-size: 1.5rem;
     }
     /****************************** UTILITIES *******************************/
 
@@ -213,3 +220,13 @@ section {
     margin-right: 0;
 }
 /****************************** PRODUCTS *******************************/
+
+
+/****************************** CONTACT *******************************/
+.contact-section {
+    gap: 5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+/****************************** CONTACT *******************************/
