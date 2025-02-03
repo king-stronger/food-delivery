@@ -1,5 +1,12 @@
 :root {
     --flow: 1rem;
+    
+    --clr-text: #1c1200;
+    --clr-background: #ffe1ad;
+    --clr-primary: #feb114;
+    --clr-secondary: #76f1bc;
+    --clr-accent: #4bceed;
+
 }
 
 /****************************** RESET CSS *******************************/
@@ -39,6 +46,12 @@ img, video, picture, svg {
 
 a {
     text-decoration: none;
+    color: var(--clr-text);
+}
+
+a:hover {
+    scale: 1 1.2;
+    color: var(--clr-primary);
 }
 
 button {
@@ -104,7 +117,13 @@ button {
     .button {
         padding: .5rem 1rem;
         border-radius: 1rem;
-        background: orange;
+        background: var(--clr-primary);
+    }
+
+    .button:hover {
+        scale: 1.1;
+        background: var(--clr-accent);
+        box-shadow: 0 0 5px 0px var(--clr-secondary);
     }
 
     .bx {
@@ -117,7 +136,9 @@ button {
 /****************************** APP & SECTIONS *******************************/
 #app {
     display: grid;
-    grid-template-columns: 1fr min(100% - 3em, 900px) 1fr;
+    color: var(--clr-text);
+    background-color: var(--clr-background);
+    grid-template-columns: 1fr min(100% - 3em, 1000px) 1fr;
 }
 
 #app > * {
@@ -140,6 +161,11 @@ section {
 .menu {
     display: flex;
     column-gap: 2rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 1.15rem;
 }
 /****************************** HEADER *******************************/
 
@@ -225,8 +251,11 @@ section {
 /****************************** CONTACT *******************************/
 .contact-section {
     gap: 5rem;
+    padding: 5em;
     display: grid;
+    border-radius: 5em;
     align-items: center;
+    background: var(--clr-primary);
     grid-template-columns: repeat(2, 1fr);
 }
 /****************************** CONTACT *******************************/
