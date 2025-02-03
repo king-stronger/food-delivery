@@ -151,22 +151,71 @@ section {
 /****************************** APP & SECTIONS *******************************/
 
 /****************************** HEADER *******************************/
-.header {
+.header .container {
+    grid-column: 2 / 3;
     display: flex;
-    padding-block: 1rem;
     align-items: center;
     justify-content: space-between;
+}
+
+#header {
+    z-index: 1;
+    display: grid;
+    position: sticky;
+    grid-column: 1 /-1;
+    padding-block: 1rem;
+    inset: 0 auto auto auto;
+    box-shadow: 0 0 3px #111;
+    grid-template-columns: subgrid;
+    background: var(--clr-background);
 }
 
 .menu {
     display: flex;
     column-gap: 2rem;
+    align-items: center;
 }
+
 
 .nav-link {
     font-weight: 500;
     font-size: 1.15rem;
 }
+
+#button-menu,
+#close-menu {
+    display: none;
+}
+
+@media (width < 750px){
+    #button-menu,
+    #close-menu {
+        display: block;
+    }
+
+    :has(> .close-menu) {
+        align-self: end;
+    }
+
+    .menu {
+        row-gap: 1rem;
+        flex-direction: column;
+        
+        position: absolute;
+        translate: 0 -110%;
+        box-shadow: 0 0 3px #111;
+        padding: 1rem 1rem 3rem 1rem;
+        inset: 0 0 auto 0;
+        z-index: 10;
+        background: var(--clr-background);
+        transition: translate ease-in 300ms;
+    }
+
+    .menu.show {
+        translate: 0 0;
+    }
+}
+
 /****************************** HEADER *******************************/
 
 
@@ -259,3 +308,37 @@ section {
     grid-template-columns: repeat(2, 1fr);
 }
 /****************************** CONTACT *******************************/
+
+
+@media (width < 900px) {
+    .hero-section,
+    .about-section,
+    .fresh-grid,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .products-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-section > *,
+    .about-section > *,
+    .fresh-grid > *,
+    .contact-section > * {
+        display: grid;
+        place-items: center;
+    }
+
+    .hero-title,
+    .about-title,
+    .contact-title {
+        text-align: center;
+    }
+}
+
+@media (width < 600px){
+    .products-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
