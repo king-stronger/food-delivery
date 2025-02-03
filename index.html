@@ -6,10 +6,11 @@
     <title>Fast Food</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div id="app">
-        <header class="header">
+        <header class="header" data-aos="zoom-out">
             <h1 class="brand">Fast Food</h1>
     
             <nav class="nav">
@@ -34,7 +35,7 @@
         </header>
     
         <section class="hero-section">
-            <div class="hero-content flow-lg">
+            <div class="hero-content flow-lg" data-aos="fade-up-right">
                 <h2 class="hero-title text-xl">Des fast-foods délicieux livrés directement chez vous</h2>
                 <p class="hero-description">
                     Profitez de vos repas préférés des meilleurs restaurants de fast-food, livrés rapidement et frais directement à votre porte. Que vous ayez envie de burgers, pizzas ou poulet frit, nous avons tout ce qu'il vous faut !
@@ -42,17 +43,17 @@
                 <button class="button">Commander maintenant</button>
             </div>
     
-            <div class="hero-img-container">
+            <div class="hero-img-container" data-aos="fade-up-left">
                 <img src="assets/images/sandwich.webp" alt="Image principale" class="hero-img">
             </div>
         </section>
     
         <section class="about-section">
-            <div class="about-img-container">
+            <div class="about-img-container" data-aos="fade-up-right">
                 <img src="assets/images/chicken.webp" alt="Image à propos" class="about-img">
             </div>
     
-            <div class="about-content flow-lg">
+            <div class="about-content flow-lg" data-aos="fade-up-left">
                 <h2 class="about-title text-xl">À propos de notre service</h2>
                 <p class="hero-description">
                     Nous offrons une livraison rapide et fiable de repas provenant de nombreuses chaînes de fast-food locales et internationales. Notre objectif est de vous apporter vos plats préférés avec commodité et rapidité.
@@ -68,13 +69,13 @@
             </p>
             <ul class="popular-list">
                 <li class="product">
-                    <img src="assets/images/pizza.webp" alt="" class="product-img">
+                    <img src="assets/images/pizza.webp" alt="" class="product-img" data-aos="flip-up">
                 </li>
                 <li class="product">
-                    <img src="assets/images/burger.webp" alt="" class="product-img">
+                    <img src="assets/images/burger.webp" alt="" class="product-img" data-aos="flip-up">
                 </li>
                 <li class="product">
-                    <img src="assets/images/chicken2.webp" alt="" class="product-img">
+                    <img src="assets/images/chicken2.webp" alt="" class="product-img" data-aos="flip-up">
                 </li>
             </ul>
         </section>
@@ -83,7 +84,7 @@
             <h2 class="fresh-title text-xl text-center">Ingrédients frais <br> et naturels</h2>
 
             <div class="fresh-grid">
-                <ul class="ingredients-list flow-lg">
+                <ul class="ingredients-list flow-lg" data-aos="flip-right">
                     <li class="ingredient">
                         <img src="assets/images/burger2.webp" alt="" class="ingredient-img">
                         <div class="ingredient-info">
@@ -131,7 +132,7 @@
                     </li>
                 </ul>
 
-                <div class="fresh-img-container">
+                <div class="fresh-img-container" data-aos="flip-left">
                     <img src="assets/images/burger3.png" alt="" class="fresh-img">
                 </div>
             </div>
@@ -141,7 +142,7 @@
             <h2 class="products-title text-xl text-center">Les fast foods <br> les plus dévorés</h2>
             <ul class="products-list">
                 <li class="product">
-                    <img src="assets/images/sandwich.webp" alt="" class="product-img">
+                    <img src="assets/images/sandwich.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Burger classique</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -151,7 +152,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/burger2.webp" alt="" class="product-img">
+                    <img src="assets/images/burger2.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Cheese Burger</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -161,7 +162,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/chicken2.webp" alt="" class="product-img">
+                    <img src="assets/images/chicken2.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Poulet frit</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -171,7 +172,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/pizza3.webp" alt="" class="product-img">
+                    <img src="assets/images/pizza3.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Pizza Margherita</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -181,7 +182,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/pizza3.webp" alt="" class="product-img">
+                    <img src="assets/images/pizza3.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Pizza Pepperoni</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -191,7 +192,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/sandwich3.webp" alt="" class="product-img">
+                    <img src="assets/images/sandwich3.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Sandwich au poulet</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -201,7 +202,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="assets/images/sandwich2.webp" alt="" class="product-img">
+                    <img src="assets/images/sandwich2.webp" alt="" class="product-img" data-aos="flip-down">
                     <h3 class="product-name">Wrap végétarien</h3>
                     <div>
                         <span class="product-price">3500F</span>
@@ -214,7 +215,7 @@
         </section>
     
         <section class="contact-section">
-            <div class="contact-content flow-lg">
+            <div class="contact-content flow-lg" data-aos="fade-up-right">
                 <h2 class="contact-title text-xl">Contactez-nous</h2>
                 <ul class="flow-lg">
                     <li class="flow-sm">
@@ -237,10 +238,18 @@
                 </ul>
             </div>
     
-            <div class="contact-img-container">
+            <div class="contact-img-container" data-aos="fade-up-left">
                 <img src="assets/images/burger.webp" alt="" class="contact-img">
             </div>
         </section>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
