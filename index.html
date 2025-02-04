@@ -17,7 +17,7 @@
                 <nav class="nav">
                     <ul class="menu" id="menu">
                         <li>
-                            <button class="bx bx-x close-menu nav-link" id="close-menu"></button>
+                            <button class="bx bx-x close-menu nav-link" id="close-menu"  aria-label="close-menu-button" aria-labelledby="menu"></button>
                         </li>
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Accueil</a>
@@ -36,13 +36,13 @@
                         </li>
                     </ul>
     
-                    <button class="button-menu bx bx-menu-alt-right" id="button-menu"></button>
+                    <button class="button-menu bx bx-menu-alt-right" id="button-menu" aria-label="menu-button" aria-labelledby="menu"></button>
                 </nav>
             </div>
         </header>
     
-        <section class="hero-section">
-            <div class="hero-content flow-lg" data-aos="fade-up-right">
+        <section class="hero-section" id="home">
+            <div class="hero-content flow-lg" data-aos="fade-up">
                 <h2 class="hero-title text-xl">Des fast-foods délicieux livrés directement chez vous</h2>
                 <p class="hero-description">
                     Profitez de vos repas préférés des meilleurs restaurants de fast-food, livrés rapidement et frais directement à votre porte. Que vous ayez envie de burgers, pizzas ou poulet frit, nous avons tout ce qu'il vous faut !
@@ -50,17 +50,17 @@
                 <button class="button">Commander maintenant</button>
             </div>
     
-            <div class="hero-img-container" data-aos="fade-up-left">
+            <div class="hero-img-container" data-aos="fade-up">
                 <img src="assets/images/sandwich.webp" alt="Sandwich appétissant avec des légumes frais et du poulet" class="hero-img">
             </div>
         </section>
     
-        <section class="about-section">
-            <div class="about-img-container" data-aos="fade-up-right">
+        <section class="about-section" id="about">
+            <div class="about-img-container" data-aos="fade-up">
                 <img src="assets/images/chicken.webp" alt="Poulet frit accompagné de légumes frais" class="about-img" loading="lazy">
             </div>
     
-            <div class="about-content flow-lg" data-aos="fade-up-left">
+            <div class="about-content flow-lg" data-aos="fade-up">
                 <h2 class="about-title text-xl">À propos de notre service</h2>
                 <p class="hero-description">
                     Nous offrons une livraison rapide et fiable de repas provenant de nombreuses chaînes de fast-food locales et internationales. Notre objectif est de vous apporter vos plats préférés avec commodité et rapidité.
@@ -69,7 +69,7 @@
             </div>
         </section>
     
-        <section class="popular-section flow-lg">
+        <section class="popular-section flow-lg" id="popular">
             <h2 class="popular-title text-xl text-center">Nos plats <br> les plus populaires</h2>
             <p class="popular-description text-center">
                 Envie de quelque chose de savoureux ? Découvrez nos produits les plus vendus, appréciés par de nombreux clients. Des burgers irrésistibles aux pizzas généreusement garnies, il y en a pour tous les goûts.
@@ -145,7 +145,7 @@
             </div>
         </section>
     
-        <section class="products-section flow-lg">
+        <section class="products-section flow-lg" id="products">
             <h2 class="products-title text-xl text-center">Les fast foods <br> les plus dévorés</h2>
             <ul class="products-list">
                 <li class="product">
@@ -153,9 +153,9 @@
                     <h3 class="product-name">Burger classique</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -163,9 +163,9 @@
                     <h3 class="product-name">Cheese Burger</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -173,9 +173,9 @@
                     <h3 class="product-name">Poulet frit</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -183,9 +183,9 @@
                     <h3 class="product-name">Pizza Margherita</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -193,9 +193,9 @@
                     <h3 class="product-name">Pizza Pepperoni</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -203,9 +203,9 @@
                     <h3 class="product-name">Sandwich au poulet</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
                 <li class="product">
@@ -213,24 +213,24 @@
                     <h3 class="product-name">Wrap végétarien</h3>
                     <div>
                         <span class="product-price">3500F</span>
-                        <a href="" class="buy-button">
+                        <button class="buy-button link">
                             <i class='bx bx-cart'></i>
-                        </a>
+                        </button>
                     </div>
                 </li>
             </ul>
         </section>
     
-        <section class="contact-section">
-            <div class="contact-content flow-lg" data-aos="fade-up-right">
+        <section class="contact-section" id="contact">
+            <div class="contact-content flow-lg" data-aos="fade-up">
                 <h2 class="contact-title text-xl">Contactez-nous</h2>
                 <ul class="flow-lg">
                     <li class="flow-sm">
                         <h3 class="text-md">Écrivez-nous</h3>
                         <div>
-                            <a href="" class="bx bxl-messenger"></a>
-                            <a href="" class="bx bxl-whatsapp"></a>
-                            <a href="" class="bx bxl-telegram"></a>
+                            <a href="https://www.facebook.com" class="bx bxl-facebook link"></a>
+                            <a href="https://web.whatsapp.com" class="bx bxl-whatsapp link"></a>
+                            <a href="https://www.instagram.com" class="bx bxl-instagram link"></a>
                         </div>
                     </li>
                     <li class="flow-sm">
@@ -240,12 +240,12 @@
                     <li class="flow-sm">
                         <h3 class="text-md">Localisation</h3>
                         <span>ACI 2000 - Bamako - Mali</span>
-                        <a href="">Voir sur Google Maps</a>
+                        <a href="https://www.google.com/maps/" class="link">Voir sur Google Maps</a>
                     </li>
                 </ul>
             </div>
     
-            <div class="contact-img-container" data-aos="fade-up-left">
+            <div class="contact-img-container" data-aos="fade-up">
                 <img src="assets/images/burger.webp" alt="Burger avec viande, fromage, légumes frais et sauce" class="contact-img" loading="lazy">
             </div>
         </section>
