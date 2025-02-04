@@ -300,7 +300,7 @@ section {
 /****************************** CONTACT *******************************/
 .contact-section {
     gap: 5rem;
-    padding: 5em;
+    padding: 5rem;
     display: grid;
     border-radius: 5em;
     align-items: center;
@@ -340,5 +340,17 @@ section {
 @media (width < 600px){
     .products-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .popular-list {
+        grid-template-columns: 1fr;
+    }
+
+    .fresh-img-container {
+        display: none;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
     }
 }
