@@ -306,8 +306,9 @@ section:nth-of-type(1){
 }
 
 :has(>.buy-button) {
-    display: flex;
     gap: 1rem;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 .buy-button {
