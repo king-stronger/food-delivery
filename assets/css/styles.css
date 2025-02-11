@@ -7,6 +7,15 @@
     --clr-secondary: #76f1bc;
     --clr-accent: #4bceed;
 
+    /***** Font sizes variables *****/
+    --fs-100: clamp(0.6944rem, 0.6856rem + 0.0444vw, 0.72rem);
+    --fs-200: clamp(0.8333rem, 0.8101rem + 0.1159vw, 0.9rem);
+    --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --fs-400: clamp(1.2rem, 1.1283rem + 0.3587vw, 1.4063rem);
+    --fs-500: clamp(1.44rem, 1.3295rem + 0.5527vw, 1.7578rem);
+    --fs-600: clamp(1.728rem, 1.5648rem + 0.8161vw, 2.1973rem);
+    --fs-700: clamp(2.0736rem, 1.8395rem + 1.1704vw, 2.7466rem);
+    --fs-800: clamp(2.4883rem, 2.1597rem + 1.6433vw, 3.4332rem);
 }
 
 /****************************** RESET CSS *******************************/
@@ -79,27 +88,27 @@ button {
 
     /****************************** TYPOGRAPHY *******************************/
     .text-xl {
-        font-size: 2.3rem;
+        font-size: var(--fs-700);
     }
 
     .text-lg {
-        font-size: 1.8rem;
+        font-size: var(--fs-600);
     }
 
     .text-md {
-        font-size: 1.3rem;
+        font-size: var(--fs-500);
     }
 
     .text {
-        font-size: 1rem;
+        font-size: var(--fs-300);
     }
 
     .text-sm {
-        font-size: 0.875rem;
+        font-size: var(--fs-200);
     }
 
     .text-xs {
-        font-size: 0.75rem;
+        font-size: var(--fs-100);
     }
 
     .text-center {
