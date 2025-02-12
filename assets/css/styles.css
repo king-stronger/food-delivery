@@ -95,8 +95,12 @@ button {
 
 
     /****************************** TYPOGRAPHY *******************************/
-    .text-xl {
+    .text-xxl {
         font-size: var(--fs-700);
+    }
+
+    .text-xl {
+        font-size: var(--fs-600);
     }
 
     .text-lg {
@@ -185,7 +189,7 @@ section {
 }
 
 section:nth-of-type(1){
-    margin-top: 5rem;
+    margin-top: 0;
 }
 /****************************** APP & SECTIONS *******************************/
 
@@ -267,10 +271,37 @@ section:nth-of-type(1){
 
 /****************************** HERO *******************************/
 .hero-section .container {
-    gap: 5rem;
+    grid-column: 1 / -1;
+
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "stacking";
+}
+
+.hero-content, .hero-img-container {
+    grid-area: stacking;
+}
+
+.hero-content {
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content :is(h2, p, button){
+    text-align: center;
+    margin-inline: auto;
+}
+
+.hero-content :is(h2, p){
+    text-shadow: 0 0 1px var(--clr-dark);
+}
+
+.hero-img {
+    width: 100%;
+    height: 70svh;
+    border-radius: 0;
+    object-fit: cover;
 }
 /****************************** HERO *******************************/
 
@@ -424,7 +455,10 @@ section:nth-of-type(1){
 
 /****************************** MEDIA *******************************/
 @media (width < 900px) {
-    .hero-section,
+    .hero-content {
+        background-color: hsla(0, 0%, 100%, 0.3);
+    }
+
     .about-section,
     .fresh-grid {
         grid-template-columns: 1fr;
@@ -434,7 +468,6 @@ section:nth-of-type(1){
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero-section > *,
     .about-section > *,
     .fresh-grid > *{
         display: grid;
