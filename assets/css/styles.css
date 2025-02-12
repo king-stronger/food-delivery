@@ -139,11 +139,10 @@ button {
         outline: 1px solid var(--clr-primary);
     }
 
-    .button:hover {
-        scale: 1.1;
+    .button:hover, .mixitup-control-active {
+        scale: 1.15;
         outline: none;
         background: var(--clr-accent);
-        box-shadow: 0 0 5px 0px var(--clr-secondary);
     }
 
 
