@@ -104,6 +104,10 @@ button {
         font-size: var(--fs-600);
     }
 
+    .text-brand {
+        font-size: var(--fs-500);
+    }
+
     .text-lg {
         font-size: var(--fs-500);
     }
@@ -207,7 +211,7 @@ section:last-of-type {
 .header {
     z-index: 1;
     position: sticky;
-    padding-block: 1rem;
+    padding-block: .75rem;
     inset: 0 auto auto auto;
     box-shadow: 0 0 3px #111;
     background: var(--clr-container);
@@ -504,6 +508,10 @@ section:last-of-type {
 @media (width < 600px){
     .products-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buy-button span{
+        display: none;
     }
 
     .fresh-img-container {
