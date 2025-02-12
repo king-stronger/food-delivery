@@ -161,7 +161,7 @@ button {
     
     .link:hover {
         scale: 1.2;
-        color: var(--clr-accent);
+        color: var(--clr-primary);
     }
     /****************************** UTILITIES *******************************/
 
