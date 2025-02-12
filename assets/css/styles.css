@@ -138,6 +138,7 @@ button {
     .button {
         padding: .5rem 1rem;
         border-radius: 1rem;
+        transition: scale 200ms ease;
     }
     
     .btn-primary {
@@ -148,12 +149,11 @@ button {
         outline: 1px solid var(--clr-primary);
     }
 
-    .button:hover, .button:active, .mixitup-control-active {
+    .button:active, .mixitup-control-active {
         scale: 1.15;
         outline: none;
         background: var(--clr-accent);
     }
-
 
     .bx {
         font-size: 1.5rem;
@@ -162,11 +162,25 @@ button {
     .link {
         display: inline-flex;
         color: var(--clr-text);
+        transition: scale 200ms ease;
     }
     
-    .link:hover, .link:active {
+    .link:active {
         scale: 1.2;
         color: var(--clr-primary);
+    }
+
+    @media (width > 900px){
+        .button:hover {
+            scale: 1.15;
+            outline: none;
+            background: var(--clr-accent);
+        }
+
+        .link:hover {
+            scale: 1.2;
+            color: var(--clr-primary);
+        }
     }
     /****************************** UTILITIES *******************************/
 
@@ -543,9 +557,9 @@ section:last-of-type {
 
     .footer-copyright {
         display: flex;
-        row-gap: 1rem;
+        row-gap: .5rem;
         align-items: center;
-        flex-direction: wrap;
+        flex-direction: column;
         justify-content: start;
     }
 }
