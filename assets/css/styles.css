@@ -8,7 +8,7 @@
     --clr-accent: #00e2c5;
     --clr-primary: #feb114;
     --clr-secondary: #a98c66;
-    --clr-container: #562200;
+    --clr-container: #402e32;
     --clr-background: #fff8ea;
 
     /***** Font sizes variables *****/
@@ -100,11 +100,11 @@ button {
     }
 
     .text-lg {
-        font-size: var(--fs-600);
+        font-size: var(--fs-500);
     }
 
     .text-md {
-        font-size: var(--fs-500);
+        font-size: var(--fs-400);
     }
 
     .text {
@@ -129,14 +129,23 @@ button {
     .button {
         padding: .5rem 1rem;
         border-radius: 1rem;
+    }
+    
+    .btn-primary {
         background: var(--clr-primary);
+    }
+
+    .btn-secondary {
+        outline: 1px solid var(--clr-primary);
     }
 
     .button:hover {
         scale: 1.1;
+        outline: none;
         background: var(--clr-accent);
         box-shadow: 0 0 5px 0px var(--clr-secondary);
     }
+
 
     .bx {
         font-size: 1.5rem;
@@ -318,8 +327,15 @@ section:nth-of-type(1){
     grid-template-columns: repeat(4, 1fr);
 }
 
+.button-categories {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .products-list .product {
-    gap: 1rem;
+    gap: .5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -334,10 +350,18 @@ section:nth-of-type(1){
     gap: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+.bx-star, .bxs-star {
+    font-size: var(--fs-200);
+    color: var(--clr-primary);
+}
+
 .buy-button {
-    margin-right: 0;
+    display: flex;
+    column-gap: .25rem;
+    align-items: center;
 }
 /****************************** PRODUCTS *******************************/
 
