@@ -316,12 +316,7 @@ section:nth-of-type(1){
 
 
 /****************************** ABOUT *******************************/
-.about-section .container {
-    gap: 5rem;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-}
+
 /****************************** ABOUT *******************************/
 
 
@@ -459,7 +454,6 @@ section:nth-of-type(1){
         background-color: hsla(0, 0%, 100%, 0.3);
     }
 
-    .about-section,
     .fresh-grid {
         grid-template-columns: 1fr;
     }
@@ -468,14 +462,12 @@ section:nth-of-type(1){
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .about-section > *,
     .fresh-grid > *{
         display: grid;
         place-items: center;
     }
 
-    .hero-title,
-    .about-title{
+    .hero-title {
         text-align: center;
     }
 
@@ -490,10 +482,6 @@ section:nth-of-type(1){
 }
 
 @media (width < 600px){
-    .about-img-container {
-        order: 2;
-    }
-
     .products-list {
         grid-template-columns: repeat(2, 1fr);
     }
