@@ -148,7 +148,7 @@ button {
         outline: 1px solid var(--clr-primary);
     }
 
-    .button:hover, .mixitup-control-active {
+    .button:hover, .button:active, .mixitup-control-active {
         scale: 1.15;
         outline: none;
         background: var(--clr-accent);
@@ -164,7 +164,7 @@ button {
         color: var(--clr-text);
     }
     
-    .link:hover {
+    .link:hover, .link:active {
         scale: 1.2;
         color: var(--clr-primary);
     }
@@ -539,5 +539,13 @@ section:last-of-type {
 
     .footer-main, .footer-contact {
         grid-column: span 2;
+    }
+
+    .footer-copyright {
+        display: flex;
+        row-gap: 1rem;
+        align-items: center;
+        flex-direction: wrap;
+        justify-content: start;
     }
 }
