@@ -325,20 +325,6 @@ section:nth-of-type(1){
 /****************************** ABOUT *******************************/
 
 
-/****************************** POPULAR *******************************/
-.popular-section {
-    background-color: var(--clr-secondary);
-}
-
-.popular-list {
-    gap: 4rem;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-}
-/****************************** POPULAR *******************************/
-
-
 /****************************** INGREDIENTS *******************************/
 .fresh-grid {
     gap: 5rem;
@@ -505,10 +491,6 @@ section:nth-of-type(1){
 
     .products-list {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .popular-list {
-        grid-template-columns: 1fr 1fr;
     }
 
     .fresh-img-container {
