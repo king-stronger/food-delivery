@@ -150,13 +150,12 @@ button {
     }
 
     .button:active, .mixitup-control-active {
-        scale: 1.15;
         outline: none;
         background: var(--clr-accent);
     }
 
     .bx {
-        font-size: 1.5rem;
+        font-size: var(--fs-300);
     }
 
     .link {
@@ -172,7 +171,6 @@ button {
 
     @media (width > 900px){
         .button:hover {
-            scale: 1.15;
             outline: none;
             background: var(--clr-accent);
         }
@@ -470,6 +468,7 @@ section:last-of-type {
 .contact-info li {
     display: flex;
     column-gap: 1rem;
+    align-items: center;
 }
 
 .footer-infos {
