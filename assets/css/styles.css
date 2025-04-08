@@ -149,7 +149,7 @@ button {
         outline: 1px solid var(--clr-primary);
     }
 
-    .button:active, .mixitup-control-active {
+    .button:active {
         outline: none;
         background: var(--clr-accent);
     }
@@ -221,7 +221,7 @@ section:last-of-type {
 }
 
 .header {
-    z-index: 1;
+    z-index: 1000;
     position: sticky;
     padding-block: .75rem;
     inset: 0 auto auto auto;
@@ -280,7 +280,6 @@ section:last-of-type {
         flex-direction: column;
         justify-content: center;
         
-        z-index: 10;
         inset: 0 0 0 0;
         height: 100svh;
         position: absolute;
@@ -300,6 +299,9 @@ section:last-of-type {
 
 
 /****************************** HERO *******************************/
+.hero-section {
+    position: relative;
+}
 .hero-section .container {
     grid-column: 1 / -1;
 
@@ -312,24 +314,34 @@ section:last-of-type {
 }
 
 .hero-content {
+    z-index: 1;
+    position: relative;
+
     display: flex;
     row-gap: 2rem;
     flex-direction: column;
     justify-content: center;
 }
 
+.hero-content::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: #111;
+    opacity: .5;
+    z-index: 0;
+}
+
 .hero-content :is(h2, p, button){
+    z-index: 1;
+    color: white;
     text-align: center;
     margin-inline: auto;
 }
 
-.hero-content :is(h2, p){
-    text-shadow: 0 0 1px var(--clr-dark);
-}
-
 .hero-img {
     width: 100%;
-    height: 70svh;
+    height: 75svh;
     border-radius: 0;
     object-fit: cover;
 }
@@ -395,6 +407,11 @@ section:last-of-type {
     justify-content: center;
 }
 
+.mixitup-control-active {
+    outline: none;
+    background: var(--clr-primary);
+}
+
 .products-list .product {
     gap: .5rem;
     display: flex;
@@ -405,6 +422,9 @@ section:last-of-type {
 
 .products-list img {
    aspect-ratio: 1/1;
+   width: 100%;
+   max-height: 250px;
+   object-fit: cover;
 }
 
 :has(>.buy-button) {
