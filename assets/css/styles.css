@@ -221,7 +221,7 @@ section:last-of-type {
 }
 
 .header {
-    z-index: 1000;
+    z-index: 10;
     position: sticky;
     padding-block: .75rem;
     inset: 0 auto auto auto;
@@ -280,10 +280,11 @@ section:last-of-type {
         flex-direction: column;
         justify-content: center;
         
+        z-index: 20;
         inset: 0 0 0 0;
         height: 100svh;
         position: absolute;
-        translate: 0 -110%;
+        translate: 0 -150%;
         box-shadow: 0 0 3px #111;
         padding: 1rem 1rem 3rem 1rem;
         background: var(--clr-container);
@@ -304,7 +305,7 @@ section:last-of-type {
 }
 .hero-section .container {
     grid-column: 1 / -1;
-
+    
     display: grid;
     grid-template-areas: "stacking";
 }
@@ -315,8 +316,9 @@ section:last-of-type {
 
 .hero-content {
     z-index: 1;
+    padding: 1rem;
     position: relative;
-
+    
     display: flex;
     row-gap: 2rem;
     flex-direction: column;
@@ -394,8 +396,8 @@ section:last-of-type {
 
 /****************************** PRODUCTS *******************************/
 .products-list {
-    gap: 3rem;
     display: grid;
+    gap: 4rem 2rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
