@@ -201,7 +201,7 @@ button {
 }
 
 section {
-    margin-block: 10rem;
+    margin-block: 5rem;
 }
 
 section:nth-of-type(1){
@@ -209,7 +209,7 @@ section:nth-of-type(1){
 }
 
 section:last-of-type {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 /****************************** APP & SECTIONS *******************************/
 
@@ -265,7 +265,7 @@ section:last-of-type {
 
     #button-menu > *,
     #close-menu > * {
-        font-size: 2rem;
+        font-size: var(--fs-500);
         color: var(--clr-light);
     }
 
@@ -430,7 +430,7 @@ section:last-of-type {
 :has(>.buy-button) {
     gap: 1rem;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 }
 
